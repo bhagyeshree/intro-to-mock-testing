@@ -13,18 +13,19 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 public class WidgetTest {
-    public static void main (String... args) throws Exception {
-        System.out.println(twitterApi.getClass());
-        //mocking actually create a child class of class to be tested
-        System.out.println(twitterApi.getClass().getSuperclass());
-        System.out.println(twitterApi.getTweets());
-
-        when(twitterApi.tweet("foo")).thenReturn(7L);
-        when(twitterApi.tweet("Rohit")).thenReturn(9L);
-
-        System.out.println(twitterApi.tweet("foo"));
-        System.out.println(twitterApi.tweet("Rohit"));
-    }
+    
+//    public static void main (String... args) throws Exception {
+//        System.out.println(twitterApi.getClass());
+//        //mocking actually create a child class of class to be tested
+//        System.out.println(twitterApi.getClass().getSuperclass());
+//        System.out.println(twitterApi.getTweets());
+//
+//        when(twitterApi.tweet("foo")).thenReturn(7L);
+//        when(twitterApi.tweet("Rohit")).thenReturn(9L);
+//
+//        System.out.println(twitterApi.tweet("foo"));
+//        System.out.println(twitterApi.tweet("Rohit"));
+//    }
 
 
     @Test
