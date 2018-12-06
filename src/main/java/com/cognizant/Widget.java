@@ -4,11 +4,12 @@ final class Widget {
 
     private final Twitter twitter;
 
-    public Widget(Twitter twitterApi) {
-        this.twitter = twitterApi;
+    public Widget(Twitter twitterApi)
+    {
+        twitter = twitterApi;
     }
 
-    long sayHelloTo(String name) throws Exception {
+    long sayHelloTo(final String name) throws Exception {
 
         try {
             return twitter.tweet("test");
